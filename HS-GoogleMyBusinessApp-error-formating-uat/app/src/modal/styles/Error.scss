@@ -1,0 +1,19 @@
+.error {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  animation: .25s ease-in slideup;
+
+  &__content {
+    padding: 10px 20px;
+    color: $white-color;
+    background-color: $red-color;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}

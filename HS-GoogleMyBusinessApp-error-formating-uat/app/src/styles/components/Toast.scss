@@ -1,0 +1,26 @@
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 35px;
+  width: 100%;
+  z-index: 1;
+  animation: 0.25s ease-in slideup;
+
+  &__content {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(157, 12, 12);
+    border-radius: 5px;
+    font-size: 17px;
+  }
+}
+
+.Toastify__toast-container {
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  margin: 0 auto;
+  left: 0;
+}

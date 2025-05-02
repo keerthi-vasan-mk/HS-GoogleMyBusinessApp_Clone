@@ -1,0 +1,21 @@
+# misc
+.DS_Store
+.idea/*
+.vscode
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+Dockerrun.aws.json
+
+# ZIP Files
+hootsuite-gmb-*
+
+# Config files
+.config/.env.production
+.env
+
+# Deployment files
+google-my-business-web*.zip

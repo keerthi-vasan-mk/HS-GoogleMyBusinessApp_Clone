@@ -1,0 +1,228 @@
+.button {
+  width: 100px;
+  height: 32px;
+  font-family: $main-font;
+  font-size: 14px;
+  color: $white-color;
+  padding: 6px 25px;
+  background-color: $blue-color;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-color;
+    box-shadow: 0px 1px 3px 0px grey;
+  }
+
+  &:disabled {
+    background-color: $blue-transparent-2-color;
+
+    &:hover {
+
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+  }
+
+  &--text {
+    width: auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: $blue-color;
+    align-self: flex-start;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background: none;
+
+    &:hover {
+      background-color: $blue-transparent-color;
+      box-shadow: none;
+    }
+  }
+
+  &--reply {
+    display: inline-flex;
+    width: 75px;
+    height: 32px;
+    color: $blue-color;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 0;
+    background-color: $white-color;
+    border: 1px $grey-2-color solid;
+
+    &:hover {
+      background-color: $blue-transparent-color;
+      box-shadow: none;
+    }
+  }
+
+  &--answer {
+    display: flex;
+    width: 90px;
+    height: 32px;
+    color: $blue-color;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    padding: 0;
+    background-color: $white-color;
+    border: 1px $grey-2-color solid;
+
+    &:hover {
+      background-color: $blue-transparent-color;
+      box-shadow: none;
+    }
+  }
+
+  &--more-answers {
+    margin-left: 42px;
+  }
+
+  &--uppercase {
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+
+  &--post {
+    width: 80px;
+    font-weight: 300;
+    color: $white-color;
+    background-color: $blue-color;
+    border: none;
+
+    &:hover {
+      background-color: $blue-color;
+      box-shadow: 0px 1px 3px 0px grey;
+    }
+  }
+
+  &--reply-answer {
+    width: 100px;
+    font-weight: 300;
+    color: $white-color;
+    background-color: $blue-color;
+    border: none;
+
+    &:hover {
+      background-color: $blue-color;
+      box-shadow: 0px 1px 3px 0px grey;
+    }
+  }
+
+  &--cta {
+    padding: 0 10px;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+
+  &--manage-locations {
+    width: 140px;
+    padding: 6px 10px;
+    margin: 10px 0;
+  }
+
+  &--more-posts {
+    align-self: center;
+  }
+
+  &--hootsuite {
+    width: 100px;
+    height: 45px;
+    align-self: flex-end;
+    color: $white-color;
+    background-color: $green-hootsuite-color;
+    padding: 15px;
+    margin: 50px 15px 0 0;
+    border-radius: 2px;
+
+    &:hover {
+      background: $green-hootsuite-color;
+    }
+
+    &:disabled {
+      background-color: $green-hootsuite-transparent-color;
+
+      &:hover {
+        background-color: $green-hootsuite-transparent-color;
+        box-shadow: none;
+        cursor: not-allowed;
+      }
+    }
+
+  }
+
+  &--dark {
+    width: 110px;
+    padding: 6px 10px;
+    background-color: $dark-grey-color;
+    margin-bottom: 5px;
+
+    &:hover {
+      background-color: $dark-grey-color;
+    }
+  }
+
+  &--cancel {
+    font-weight: normal;
+    color: $grey-4-color;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: $grey-transparent-color;
+    }
+  }
+
+  &--disabled {
+    color: $grey-4-color;
+    background-color: $grey-2-color;
+
+    &:hover {
+      cursor: not-allowed;
+      background-color: $grey-2-color;
+      box-shadow: none;
+    }
+
+  }
+
+  &--admin-login {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    &:disabled {
+      background-color: $grey-5-color;
+    }
+
+  }
+
+  &--admin {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    margin-left: auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+
+    &:disabled {
+      background-color: $grey-5-color;
+    }
+
+  }
+
+}

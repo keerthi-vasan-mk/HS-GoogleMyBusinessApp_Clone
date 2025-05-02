@@ -1,0 +1,65 @@
+.question-response {
+  display: flex;
+  margin: 10px 0 0 0;
+  border-top: none;
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 50%;
+
+    &--owner {
+      background-color: $grey-2-color;
+    }
+  }
+
+  &__info {
+    width: 100%;
+
+    h5 {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0 0 0 10px;
+    }
+
+    h6 {
+      display: inline-block;
+      color: $grey-4-color;
+      font-size: 12px;
+      font-weight: normal;
+      margin: 2px 0 0 10px;
+      vertical-align: text-top;
+    }
+
+    p {
+      color: $black-color;
+      font-size: 14px;
+      margin: 5px 0 0 10px;
+    }
+
+    &__title {
+      display: flex;
+      flex-wrap: wrap;
+
+      p {
+        margin: 0 5px;
+      }
+
+      &__buttons {
+        height: 16px;
+        margin-left: 10px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+
+      }
+
+    }
+
+  }
+}

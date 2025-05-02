@@ -1,0 +1,135 @@
+.content-posts {
+  width: 100%;
+  min-width: 297px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 40px 15px;
+  margin-top: 45px;
+  background-color: $white-color;
+  box-sizing: border-box;
+
+  .post {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid $grey-2-color;
+    border-radius: 5px;
+
+    &__image {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      top: 0;
+      left: 0;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      object-fit: cover;
+    }
+
+    &__header {
+      width: calc(100% + 30px);
+      position: relative;
+      margin: -15px 0 0 -15px;
+      border-radius: 5px;
+
+      &__title {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 5px 15px 0 15px;
+        background: linear-gradient(180deg, #00000080 0%, #00000000 75%);
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        p {
+          font-size: 13px;
+          font-weight: 300;
+          color: $white-color;
+          margin: 10px 0 0 0;
+        }
+
+        &__icon {
+          display: block;
+          height: 25px;
+          margin-top: 5px;
+          cursor: pointer;
+        }
+
+        &__metrics {
+          margin-left: 8px;
+
+          &__icon {
+            height: 16px;
+            margin-right: 4px;
+            vertical-align: bottom;
+          }
+        }
+      }
+
+    }
+
+    &__info {
+      width: 95%;
+
+      h5 {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      h6 {
+        display: inline-block;
+        color: $grey-4-color;
+        font-size: 12px;
+        font-weight: normal;
+        margin: 2px 0 0 0;
+        vertical-align: text-top;
+      }
+
+      p {
+        color: $black-color;
+        font-size: 14px;
+        margin: 5px 0 10px 10px;
+      }
+
+      &__location {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 15px 0 0 5px;
+
+        &__icon {
+          height: 16px;
+          margin: 1px 10px 0 0;
+        }
+
+      }
+
+      &__address {
+        width: 90%;
+        height: 16px;
+        font-size: 12px !important;
+        color: $grey-4-color !important;
+        margin: 0 0 10px 31px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &--link {
+        color: $blue-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .loading-icon {
+    align-self: center;
+  }
+
+}

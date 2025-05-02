@@ -1,0 +1,20 @@
+name: Runs unit tests for the frontend
+
+env:
+  GIT_LOCAL_BRANCH: ${{ github.sha }}
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Start client
+        run: make run-test
+      - name: Run test
+        run: make run-client-test
+      - name: Close containers
+        run: make close-test
+        if: ${{ always() }}

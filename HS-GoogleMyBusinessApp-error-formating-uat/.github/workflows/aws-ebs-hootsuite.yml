@@ -1,0 +1,14 @@
+name: aws deployment hootsuite
+on:
+  workflow_dispatch:
+    inputs:
+      AWS_ENV:
+        required: true
+      ECR:
+        required: true
+      REPONAME:
+        required: true
+      IMAGE_TAG:
+        required: true
+      APP_NAME:
+        required: true

@@ -1,0 +1,522 @@
+.new-post {
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  font-family: $secondary-font;
+  padding: 0 5px;
+  margin: 0 auto;
+  background-color: $white-color;
+  box-sizing: border-box;
+  overflow-y: scroll;
+
+  &__radio-header {
+    height: 65px;
+    display: flex;
+    align-items: center;
+
+    &__label {
+      font-family: $secondary-font;
+      font-weight: 600;
+      font-size: 14px;
+      margin-right: 20px;
+    }
+  }
+
+  &__checkbox {
+    &__label {
+      font-family: $secondary-font;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    &__toggle {
+      color: $grey-4-color;
+    }
+  }
+
+  &__picker-group {
+    display: flex;
+    margin-bottom: 15px;
+  }
+
+  &__expanded-options {
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin-top: 20px;
+
+    &--collapsed {
+      min-height: 25px;
+      overflow: hidden;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      font-family: $secondary-font;
+      font-weight: 600;
+      font-size: 14px;
+
+      &__info-icon {
+        height: 24px;
+        margin-right: 10px
+      }
+      
+      &__icon-button {
+        align-self: flex-end;
+        height: 24px;
+        width: 24px;
+
+        &__expand-icon {
+          height: 24px;
+        }
+      }
+
+      &__expander-wrapper {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 0;
+
+    select {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      margin-top: 10px;
+      background-color: $white-color;
+      border: solid 1px $grey-2-color;
+      border-radius: 2px;
+      outline: none;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      font-size: 12px;
+      padding: 10px;
+      border-color: $grey-2-color;
+      border-radius: 2px;
+      box-sizing: border-box;
+      outline: none;
+      resize: none;
+      transition: 0.25s linear;
+
+      &:focus {
+        border: solid 1px $blue-hootsuite-color;
+        box-shadow: 0 0 0 1px $blue-hootsuite-color;
+      }
+    }
+
+    &--text-input {
+      width: 100%;
+      height: 40px;
+      font-size: 14px;
+      color: $black-color;
+      padding: 10px;
+      border-radius: 2px;
+      border: solid 1px $grey-2-color;
+      box-sizing: border-box;
+      outline: none;
+      transition: 0.25s linear;
+
+      &:focus {
+        border: solid 1px $blue-hootsuite-color;
+        box-shadow: 0 0 0 1px $blue-hootsuite-color;
+      }
+
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      &__title {
+        height: 24px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+          height: 24px;
+          margin-right: 10px;
+        }
+
+        h4 {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+      }
+
+      &__char-count {
+        color: $grey-4-color;
+        font-size: 12px;
+
+        &--error {
+          color: $red-color;
+        }
+
+      }
+
+      &__link {
+        color: $blue-hootsuite-2-color;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+    }
+
+    &__select-container {
+      margin-top: 10px;
+    }
+
+    &__dropzone {
+      height: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-top: 10px;
+      border: dashed 1px $grey-2-color;
+      box-sizing: border-box;
+      outline: none;
+
+      &__subtitle {
+        color: $grey-4-color;
+        font-size: 14px;
+        margin: 0;
+
+        &__link {
+          color: $blue-hootsuite-2-color;
+          cursor: pointer;
+        }
+
+        &--error {
+          margin: 5px 0 0 0;
+          color: $red-color;
+        }
+      }
+
+      &--is-active {
+        background-color: $blue-transparent-2-color;
+      }
+
+      &--error {
+        background-color: #FF00004F;
+      }
+
+      &--uploaded {
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        img {
+          max-width: 100%;
+          max-height: 80px;
+          object-fit: contain;
+        }
+
+        video {
+          width: 100%;
+          max-height: 80px;
+          outline: none;
+        }
+
+        p {
+          font-size: 12px;
+          margin: 0 0 0 15px;
+          word-break: break-all;
+        }
+
+        .left {
+          display: flex;
+          align-items: center;
+
+          &__image-box {
+            max-height: 80px;
+            max-width: 165px;
+            overflow: hidden;
+          }
+        }
+
+        .close-icon {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          margin: 0 0 0 15px;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+.select {
+
+  &__placeholder {
+    color: $black-color !important;
+  }
+
+  &__control {
+    font-size: 14px;
+    color: $black-color !important;
+    border: solid 1px #DDDDDD;
+
+    &--is-focused {
+      border: solid 1px $blue-hootsuite-color !important;
+      box-shadow: 0 0 0 1px $blue-hootsuite-color !important;
+    }
+
+    &--menu-is-open .select__dropdown-indicator {
+      transform: rotateX(180deg);
+    }
+
+  }
+
+  &__indicator-separator {
+    display: none;
+  }
+
+  &__dropdown-indicator {
+    transition: color 150ms, transform 0.25s linear !important;
+  }
+
+  &__single-value {
+    font-weight: 600;
+  }
+
+  &__option {
+    font-size: 14px !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s linear;
+
+    &--is-selected {
+      color: $black-color !important;
+      background-color: $blue-transparent-2-color !important;
+    }
+
+    &:hover {
+      background-color: $blue-transparent-2-color;
+    }
+
+  }
+
+}
+
+.select-multi {
+
+  &__placeholder {
+    color: $black-color !important;
+  }
+
+  &__control {
+    font-size: 14px;
+    color: $black-color !important;
+    border: solid 1px $grey-2-color;
+
+    &--is-focused {
+      border: solid 1px $blue-hootsuite-color !important;
+      box-shadow: 0 0 0 1px $blue-hootsuite-color !important;
+    }
+
+    &--menu-is-open .select-multi__dropdown-indicator {
+      transform: rotateX(180deg);
+    }
+
+    &--is-disabled {
+
+      .select-multi__dropdown-indicator {
+        display: none !important;
+      }
+
+    }
+
+  }
+
+  &__indicator-separator {
+    display: none;
+  }
+
+  &__dropdown-indicator {
+    transition: color 150ms, transform 0.25s linear !important;
+  }
+
+  &__multi-value {
+
+    &__label {
+      font-size: 14px !important;
+    }
+
+    &--is-disabled {
+
+      .select-multi__multi-value__remove {
+
+        svg {
+          display: none !important;
+        }
+
+      }
+
+    }
+
+  }
+
+  &--is-disabled {
+
+    .select-multi__multi-value__remove {
+
+      svg {
+        display: none !important;
+      }
+
+    }
+
+  }
+
+  &__option {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    border-left: solid 5px $white-color;
+    transition: 0.25s linear;
+    box-sizing: border-box;
+
+    h4 {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    a,
+    a:visited {
+      font-size: 12px;
+      text-decoration: none;
+      color: $blue-color;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: normal;
+      color: $grey-4-color;
+      margin: 0;
+    }
+
+    input[type="checkbox"] {
+      widows: 12px;
+      height: 12px;
+      display: inline-block;
+      position: relative;
+      padding: 6px;
+      margin-right: 15px;
+      background-color: $white-color;
+      border: 1px solid $black-color;
+      outline: none;
+      transition: 0.2s linear;
+      -webkit-appearance: none;
+
+      &:checked {
+        background-color: $black-color;
+
+        &:after {
+          content: '\2713';
+          font-size: 14px;
+          position: absolute;
+          top: -3px;
+          left: 0px;
+          color: $white-color;
+        }
+
+      }
+
+    }
+
+    &:hover {
+      background-color: $blue-transparent-2-color;
+      border-left: solid 5px $blue-hootsuite-color;
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+
+      h4, p {
+        color: $grey-6-color;
+      }
+
+      input[type="checkbox"] {
+        border: 1px solid $grey-6-color;
+
+        &:hover {
+          cursor: not-allowed;
+        }
+
+      }
+
+      &:hover {
+        background-color: $grey-color;
+        border-left: solid 5px $grey-4-color;
+
+        input[type="checkbox"] {
+          background-color: $grey-color;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.loader {
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-loader {
+  align-self: center;
+  margin: 40px 0;
+}
+
+.right-loader {
+  align-self: right;
+  margin: 10px 0;
+}
+
+// Google Drive File Picker modal 
+.picker-dialog {
+  left: -1px !important;
+  top: 10px !important;
+  outline: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  client:
+    image: ${PROJECT}-client:${GIT_LOCAL_BRANCH}
+    container_name: ${PROJECT}-client
+    build:
+      context: ./app
+      dockerfile: Dockerfile.test
+    ports:
+      - "3000:3000"
+    volumes:
+      # Ignores/Hides the node_modules from the bind on the host allowing the node_modules
+      # from inside the container to be used instead
+      - /usr/src/app/node_modules

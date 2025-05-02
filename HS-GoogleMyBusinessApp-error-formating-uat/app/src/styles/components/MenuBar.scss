@@ -1,0 +1,87 @@
+.menubar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $background-grey-color;
+  border-bottom: 1px solid $grey-2-color;
+  z-index: 1;
+
+  .menubar__bar {
+    padding: 10px 5px 5px 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__icon {
+      height: 26px;
+      width: 26px;
+
+      &--new-post {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .menubar__dropdown {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5px 10px;
+    background-color: $background-grey-color;
+    border-top: 1px solid $grey-2-color;
+    box-shadow: 0px 6px 7px -7px;
+    z-index: 10;
+
+    &__user {
+      margin: 5px 0;
+    }
+
+  }
+
+  .disconnect-modal {
+    padding: 10px 5px;
+    
+    &__body {
+      padding: 5px 10px;
+
+      &__title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 0;
+      }
+
+      &__message {
+        color: $grey-4-color;
+        font-weight: 400;
+        margin: 5px 0 15px;
+      }
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        font-weight: 500;
+        margin-left: 10px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  /* Overwriting the popup class */
+  .popup-content {
+    width: 80% !important;
+    border: none !important;
+    border-radius: 10px;
+  }
+}

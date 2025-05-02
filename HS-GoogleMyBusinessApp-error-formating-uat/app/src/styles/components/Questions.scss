@@ -1,0 +1,62 @@
+.location {
+
+  &__questions-list {
+    text-align: center;
+    margin-top: 5px;
+    border-top: 1px solid $grey-2-color;
+    border-bottom: 10px solid $grey-2-color;
+
+    &__no-reviews {
+      color: $grey-4-color !important;
+      margin: 40px 0 !important;
+      font-style: italic;
+    }
+
+    &__question {
+      display: flex;
+      text-align: left;
+      padding: 15px;
+      border-bottom: 1px solid $grey-2-color;
+      border-top: none;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &__icon {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 50%;
+      }
+
+      &__info {
+        width: 95%;
+
+        h5 {
+          font-size: 14px;
+          font-weight: normal;
+          margin: 0;
+        }
+
+        h6 {
+          display: inline-block;
+          color: $grey-4-color;
+          font-size: 12px;
+          font-weight: normal;
+          margin: 2px 0 0 0;
+          vertical-align: text-top;
+        }
+
+        p {
+          color: $black-color;
+          font-size: 14px;
+          margin: 5px 0 10px 10px;
+        }
+
+      }
+
+    }
+
+  }
+}

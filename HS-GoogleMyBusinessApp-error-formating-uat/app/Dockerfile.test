@@ -1,0 +1,19 @@
+FROM node:9.6.1
+
+MAINTAINER FreshWorks <web@freshworks.io>
+
+ENV PATH $PATH:/usr/src/app/node_modules/.bin
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build:local
+
+EXPOSE 3000
+
+CMD [ "npm", "run", "serve-dev" ]

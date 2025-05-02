@@ -1,0 +1,24 @@
+.banner {
+  width: 100px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  background-color: $blue-hootsuite-color;
+  box-shadow: 0px 6px 7px -7px $grey-4-color;
+  border-radius: 500px;
+  z-index: 1;
+  animation: .5s ease-in slidein;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 12px;
+    color: $white-color;
+    margin: 5px;
+  }
+}

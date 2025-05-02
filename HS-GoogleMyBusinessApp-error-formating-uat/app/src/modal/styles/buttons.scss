@@ -1,0 +1,96 @@
+.button {
+  width: 100px;
+  height: 32px;
+  font-family: $secondary-font;
+  font-size: 14px;
+  color: $white-color;
+  padding: 8px 25px;
+  background-color: $blue-color;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $blue-color;
+    box-shadow: 0px 1px 3px 0px grey;
+  }
+
+  &--text {
+    width: 100%;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: bold;
+    color: $blue-color;
+    align-self: flex-start;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background: none;
+
+    &:hover {
+      background-color: $blue-transparent-color;
+      box-shadow: none;
+    }
+
+    &-hootsuite {
+      font-family: $secondary-font;
+      color: $blue-hootsuite-2-color;
+      align-self: center;
+      margin: 5px;
+
+      &:hover {
+        background-color: $white-color;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &--uppercase {
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+
+  &--select {
+    margin: 0 0 15px 0;
+    align-self: center;
+  }
+
+  &--hootsuite {
+    width: 100px;
+    height: 45px;
+    align-self: flex-end;
+    color: $white-color;
+    background-color: $green-hootsuite-color;
+    padding: 15px;
+    margin: 20px 15px 40px 0;
+    border-radius: 2px;
+
+    &--centered {
+      align-self: center;
+      margin: 0;
+    }
+
+    &:hover {
+      background: $green-hootsuite-color;
+    }
+
+    &:disabled {
+      background-color: $green-hootsuite-transparent-color;
+
+      &:hover {
+        background-color: $green-hootsuite-transparent-color;
+        box-shadow: none;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &--modal {
+    width: auto;
+    margin: 0 10px;
+  }
+
+}

@@ -1,0 +1,101 @@
+.admin-login {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: $white-color;
+  box-sizing: border-box;
+
+  &__card {
+    width: 450px;
+    display: flex;
+    color: $black-color;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px 40px 40px;
+    background-color: $white-color;
+    border-radius: 10px;
+    border: 1px solid #D2D2D261;
+    box-shadow: 0px 4px 5px 0px $grey-2-color;
+    box-sizing: border-box;
+
+    &__logo {
+      width: 20%;
+      object-fit: contain;
+    }
+
+    &__title {
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 24px;
+      color: $black-color;
+      margin: 10px 0 0 0;
+    }
+
+    &__text {
+      width: 80%;
+      font-family: $main-font;
+      font-weight: normal;
+      font-size: 18px;
+      text-align: center;
+      color: $grey-4-color;
+      margin: 10px 0 5px 0;
+    }
+
+    &__label {
+      font-family: $main-font;
+      font-size: 16px;
+      color: $grey-4-color;
+      align-self: flex-start;
+      margin: 10px 0 5px 0;
+    }
+
+    &__input {
+      width: 100%;
+      height: 40px;
+      font-family: $main-font;
+      font-size: 14px;
+      padding: 5px;
+      outline: none;
+      border: 2px solid $blue-color;
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: 0.25s ease-out;
+
+      &--error {
+        border: 2px solid $red-color;
+      }
+
+    }
+
+    &__spinner {
+      margin-top: 10px;
+    }
+
+  }
+
+  .error {
+    height: 15px;
+    font-size: 12px;
+    color: $red-color;
+    align-self: flex-start;
+    margin-top: 5px;
+  }
+
+}
+
+#root {
+  min-height: 100%;
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

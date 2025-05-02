@@ -1,0 +1,63 @@
+.notification {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  background-color: $white-color;
+  box-sizing: border-box;
+  animation: 0.5s ease-out appear;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; 
+  }
+
+  &__text {
+    width: 90%;
+    font-family: $main-font;
+    font-size: 14px;
+    margin: 0;
+
+    &--info {
+      color: $blue-hootsuite-color;
+    }
+  
+    &--warn {
+      color: $yellow-color;
+    }
+
+  }
+
+  &__close-icon {
+    width: 25px;
+    height: 25px;
+    align-self: flex-start;
+    cursor: pointer;
+  }
+
+  &--info {
+    border-left: 10px solid $blue-hootsuite-color;
+  }
+
+  &--warn {
+    border-left: 10px solid $yellow-color;
+  }
+
+  &--posts {
+    margin: -15px -15px 0 -15px;
+  }
+
+}
+
+.border-bottom {
+  width: 100%;
+  height: 10px;
+  background-color: $grey-2-color;
+
+  &--posts {
+    width: calc(100% + 30px);
+    margin: 0 -15px 15px -15px;
+  }
+
+}

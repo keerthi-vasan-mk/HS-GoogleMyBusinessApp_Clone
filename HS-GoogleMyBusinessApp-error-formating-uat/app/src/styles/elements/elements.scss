@@ -1,0 +1,21 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $main-font;
+  background-color: $grey-2-color;
+  margin: 0;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #DDDDDD;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey-5-color;
+    border-radius: 4px;
+  }
+
+}
